@@ -9,6 +9,9 @@
   @include base-mixins.mobile
     padding: 3rem
 
+  @include base-mixins.mobile
+    padding: 3rem
+
   a, p
     color: variables.$gray-text-color
 
@@ -37,6 +40,10 @@
 
     &-about, &-categories, &-information, &-menu
       max-width: 25%
+
+      @include base-mixins.mobile
+        width: 100%
+        margin-bottom: 1rem
 
       @include base-mixins.mobile
         max-width: 100%
